@@ -1,0 +1,77 @@
+body{
+    background-color: lightgray;
+}
+
+.Mestre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Tela{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: black;
+    width: 20%;
+    justify-content: end;
+}
+p{
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.TecladoNumerico{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 10px;
+    width: 70%;
+}
+
+.Teclado{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+}
+
+.TecladoOperacoes{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 10px;
+    width: 20%;
+}
+button{
+    background-color: rgb(55, 55, 55);
+    color: white;
+    border: 1px solid rgb(55, 55, 55);
+    border-radius: 10px;
+    height: 40px;
+}
+button:hover{
+    background-color: rgb(100, 100, 100);
+    border: 1px solid rgb(100, 100, 100);
+}
+button:active{
+    background-color: rgb(35, 35, 35);
+    border: 1px solid rgb(35, 35, 35);
+}
+
+.TecladoOperacoes button{
+    background-color: rgb(163, 119, 35);
+}
+.TecladoOperacoes button:hover{
+    background-color: rgb(200, 150, 50);
+} 
+.TecladoOperacoes button:active{
+    background-color: rgb(143, 99, 25);
+}
