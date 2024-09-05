@@ -11,7 +11,7 @@ let botoesNumericos = document.querySelectorAll('.TecladoNumerico button');
 let botoesOperadores = document.querySelectorAll('.TecladoOperacoes button');
 let tela = document.querySelector('.Tela p');
 
-for(let i = 0; i < botoesNumericos.length; i++){
+for(let i = 0; i < botoesNumericos.length - 1; i++){
     botoesNumericos[i].addEventListener('click', function(){
         atualizarValor(i + 1);
         tela.textContent = strCompleta;
@@ -19,6 +19,7 @@ for(let i = 0; i < botoesNumericos.length; i++){
 }
 botoesNumericos[9].addEventListener('click', function(){
     atualizarValor(0);
+    tela.textContent = strCompleta;
 });
 botoesOperadores[0].addEventListener('click', function(){
     let retorno = setOperation('+');

@@ -1,5 +1,5 @@
 body{
-    background-color: lightgray;
+    background-color: rgb(106, 106, 106);
 }
 
 .Mestre{
@@ -27,35 +27,37 @@ p{
 .TecladoNumerico{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 10px;
-    margin: 10px;
-    width: 70%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-grow: 1;
 }
 
 .Teclado{
     border: 1px solid black;
     border-radius: 5px;
     background-color: black;
-    width: 20%;
+    height: 300px;
     display: flex;
     flex-direction: row;
+    width: 20%;
 }
 
 .TecladoOperacoes{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
     margin: 10px;
-    width: 20%;
+    flex-grow: 1;
 }
 button{
     background-color: rgb(55, 55, 55);
     color: white;
     border: 1px solid rgb(55, 55, 55);
     border-radius: 10px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
 }
 button:hover{
     background-color: rgb(100, 100, 100);
